@@ -1,0 +1,189 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{datetime2}
+\usepackage{xparse}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{hyperref}
+
+
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+
+ 
+ \usepackage{graphicx}
+ \usepackage{titling}
+
+ \title{Assignment 1 : Paper Review "Review of Artificial Intelligence Applications in Engineering Design Perspective"}
+% \author{Muhammad Qomaruz Zaman}
+\date{03 March 2026}
+ 
+ \usepackage{fancyhdr}
+\fancypagestyle{plain}{%  the preset of fancyhdr 
+    \fancyhf{} % clear all header and footer fields
+    \fancyfoot[R]{}
+    \fancyfoot[L]{}
+    \fancyhead[L]{\includegraphics[width=2cm]{ITS_pojok.pdf}}
+    \fancyhead[R]{ \DTMnow}
+}
+\makeatletter
+\def\@maketitle{%
+  \newpage
+  \null
+  \vskip 1em%
+  \begin{center}%
+  \let \footnote \thanks
+    {\LARGE \@title \par}%
+    \vskip 1em%
+    %{\large \@date}%
+  \end{center}%
+  \par
+  \vskip 1em}
+\makeatother
+
+\usepackage{lipsum}  
+% \usepackage{cmbright} % Change the font by zee
+
+\begin{document}
+
+\maketitle
+
+
+\noindent\begin{tabular}{@{}ll}
+    Author(s): & Irwnaysah Indra Prayoga\\
+     Teacher: &  Muhammad Qomaruz Zaman, S.T., M.T., Ph.D.\\
+     Class name: & Kecerdasan Buatan\\
+     YouTube video link: & \url{https://youtu.be/XnGeqjbIusw?si=C58i2F8sJz37gfQx} \\
+     GitHub link: & \url{https://github.com/dharmamangrwa/Tugas-Kecerdasan-Buatan-di-Overleaf.git}
+\end{tabular}
+\vspace{2cm}
+
+\section*{Pendahuluan}
+
+Engineering design secara tradisional merupakan proses yang berpusat pada manusia dan memerlukan kreativitas, intuisi, serta keahlian teknis. Namun, kemunculan Artificial Intelligence (AI) telah mengubah paradigma tersebut dengan menghadirkan pendekatan berbasis data dan komputasi cerdas.
+
+Artikel yang direview berjudul Review of Artificial Intelligence Applications in Engineering Design Perspective yang ditulis oleh \cite{yuksel2023artificial} dan dipublikasikan dalam jurnal Engineering Applications of Artificial Intelligence. Studi ini memberikan tinjauan komprehensif mengenai penerapan AI dalam desain teknik selama 15 tahun terakhir.
+
+Tujuan utama artikel tersebut adalah: \begin{enumerate}
+
+\item Mengkaji penerapan metode AI klasik dan modern dalam engineering design.
+\item Mengklasifikasikan metode AI berdasarkan tahapan proses desain.
+\item Mengidentifikasi kekuatan dan keterbatasan masing-masing metode.
+\item Memberikan proyeksi arah penelitian masa depan.
+\end{enumerate}
+
+\section*{Metodologi Kajian}
+
+Penelitian menggunakan metode systematic literature review. Artikel dikumpulkan dari database Scopus dan Web of Science dengan rentang tahun 2006–2021.
+
+Tahapan seleksi meliputi: \begin{enumerate}
+\item Eliminasi duplikasi.
+\item Penyaringan berdasarkan judul dan kata kunci.
+\item Evaluasi abstrak.
+\item Analisis isi penuh.
+\end{enumerate}
+
+Dari sekitar 2000 publikasi awal, diperoleh 184 artikel yang relevan (132 jurnal dan 52 prosiding konferensi).
+
+Kriteria evaluasi meliputi:\begin{enumerate}
+\item Jenis masalah desain
+\item Bidang aplikasi
+\item Metode AI yang digunakan
+\item Hasil dan kontribusi penelitian
+\end{enumerate}
+
+\section*{Tinjauan Metode Artificial Intelligence dalam Desain Teknik}
+
+1. Metode AI Klasik,
+metode klasik yang dibahas meliputi:\cite{minh2022explainable} \begin{itemize}
+\item Genetic Algorithm (GA): Algoritma evolusioner berbasis seleksi alam untuk optimasi.
+\item Fuzzy Logic: Sistem berbasis aturan untuk menangani ketidakpastian.
+\item Artificial Neural Network (ANN): Model komputasi menyerupai sistem saraf biologis.
+\item Expert Systems: Sistem berbasis pengetahuan dengan aturan eksplisit.
+\end{itemize}
+Metode ini banyak digunakan dalam evaluasi dan optimasi desain.
+
+2. Metode AI Modern,
+Pendekatan modern meliputi: \cite{alpaydin2014machine}  \begin{itemize}
+\item Machine Learning (ML)
+\item Deep Learning (DL) seperti CNN, RNN, dan GAN
+\item Explainable Artificial Intelligence (XAI)
+\end{itemize}
+Tren literatur menunjukkan peningkatan tajam penggunaan ML dan DL setelah tahun 2014, didorong oleh ketersediaan big data dan peningkatan kemampuan komputasi.
+
+Klasifikasi Aplikasi AI dalam Tahapan Desain
+1. Tahap Inspirasi
+AI digunakan untuk: \cite{neapolitan2018artificial} \begin{itemize}
+\item Penambangan data paten
+\item Analisis literatur ilmiah
+\item Semantic network
+\item Natural Language Processing
+\item Generative Adversarial Networks (GAN)
+\end{itemize}
+Metode ini membantu desainer mengatasi design fixation dan memperluas ruang solusi.
+
+2. Generasi Ide dan Konsep
+AI mampu menghasilkan alternatif desain melalui: \cite{salehi2018emerging} \begin{itemize}
+\item ANN dan GA untuk konfigurasi produk
+\item Machine Learning berbasis preferensi pelanggan
+\item GAN untuk generative design
+\item Desain terinspirasi objek biologis
+\end{itemize}
+Deep learning memungkinkan penciptaan ribuan alternatif konsep secara otomatis.
+
+3. Evaluasi dan Pengambilan Keputusan
+Metode yang digunakan meliputi: \cite{talbi2009meta} \begin{itemize}
+\item Fuzzy logic untuk multi-criteria decision making
+\item ANN untuk prediksi kepuasan pelanggan
+\item ML untuk klasifikasi kreativitas desain
+\item Evaluasi berbasis data siklus hidup produk
+\end{itemize}
+Pendekatan ini mempercepat evaluasi objektif dalam ruang solusi besar.
+
+4. Optimasi Desain
+Digunakan untuk: \cite{gen2008network} \begin{itemize}
+\item  Topology optimization
+\item  Optimasi struktur
+\item  Layout planning
+\item  Parameter tuning
+\end{itemize}
+
+Metode populer: \begin{itemize}
+\item GA
+\item Particle Swarm Optimization (PSO)
+\item Ant Colony Optimization (ACO)
+\item Hybrid AI
+\end{itemize}
+
+5. Pemodelan dan Simulasi
+Deep learning mulai digunakan sebagai alternatif simulasi tradisional seperti Finite Element Analysis (FEA), dengan waktu komputasi yang jauh lebih cepat.
+
+\section*{Diskusi}
+AI telah mengubah engineering design menjadi sistem kolaboratif manusia–mesin. Metode klasik tetap relevan untuk permasalahan terstruktur, sementara metode modern unggul dalam pengolahan data besar dan generasi kreatif. \cite{boden2004machine}
+Namun, meningkatnya penggunaan deep learning menimbulkan tantangan transparansi. Oleh karena itu, Explainable AI (XAI) menjadi krusial untuk meningkatkan kepercayaan dan akuntabilitas sistem.
+Pemilihan metode AI harus mempertimbangkan: \cite{Brynjolfsson2017wireless} \begin{enumerate}
+\item Ketersediaan data
+\item Kompleksitas masalah
+\item Kebutuhan interpretabilitas
+\item Sumber daya komputasi
+\end{enumerate}
+
+\section*{Kesimpulan}
+
+Artificial Intelligence merupakan teknologi disruptif dalam engineering design. Machine Learning dan Deep Learning menjadi pendekatan dominan dalam dekade terakhir.
+
+Kolaborasi manusia–AI akan menjadi paradigma masa depan desain teknik, dengan penekanan pada transparansi melalui Explainable AI.
+
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+
+
+\end{document}
